@@ -8,10 +8,17 @@
         <div class='row'>
             <div class='col-md-2'>Filter by:</div>
             <div class='col-md-4'>
-                <input type='text'
+                <input type='text' #nameElement
                        [(ngModel)]='listFilter' />
             </div>
         </div>
+        <div class='row'>
+          <div class='col-md-2'>Filter Name:</div>
+          <div class='col-md-4'>
+              <input type='text' #filterElement
+                     [(ngModel)]='filterName' />
+          </div>
+      </div>
         <div class='row' [hidden]='!listFilter'>
             <div class='col-md-10'>
                 <h3>Filtered by: {{listFilter}} </h3>
